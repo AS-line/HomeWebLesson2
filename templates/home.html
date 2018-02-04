@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends base.html %}
 
-<form method="post">
-    <input type="text" name="name_html_athribut" placeholder="Имя">
-    <br>
-    <br>
-    <input type="number" name="year_html_athribut" placeholder="Возраст">
-    <br>
-    <br>
-    <label> Мужчина?
-        <input type="checkbox" name="male_html_athribut" >
-    </label>
-    <br>
-    <br>
-    <input type="submit">
-</form>
 
-    {% for person in persons %}
-        <div>
-            <h3>{{ person.name }}||{{ person.year }}||{% if person.male %} Мужчина {% else %} Женщина {% endif %}</h3>
-        </div>
-    {% endfor %}
-
-</body>
-</html>

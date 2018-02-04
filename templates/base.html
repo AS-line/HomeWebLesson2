@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <style>
+   li {
+    list-style-type: none;
+   
+   }
+   ul {
+    
+   }
+   .links {
+   	margin-left: 5%;
+   	
+   }
+  </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="/post">Registration</a>
+            <a class="links" href="/person">All users</a>
+        </li>
+    </ul>
+
+    {% block content %} {% endblock %}
+
+</body>
+</html>
